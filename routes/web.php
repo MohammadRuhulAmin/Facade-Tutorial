@@ -16,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     Larademo::sayHello();
+    print_r(FriendList::FriendInformation()) ;
     return view('welcome');
 });
+Route::get('/friendList',function(){
+    $info = app(FriendList::FriendInformation());
+    return $info;
+});
+
+Route::get('/friend-controller','FriendController@index');

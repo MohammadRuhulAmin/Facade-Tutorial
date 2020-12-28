@@ -162,6 +162,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         App\Providers\LarademoServiceProvider::class,
+        App\Providers\FriendServiceProvider::class,
 
 
         /*
@@ -229,6 +230,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Larademo'=>App\Larademo\LarademoFacade::class,
+        'FriendList'=>App\Friend\FriendListFacade::class,
 
     ],
 
