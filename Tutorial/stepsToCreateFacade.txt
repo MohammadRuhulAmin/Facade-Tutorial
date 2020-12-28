@@ -65,5 +65,31 @@ inside alices => register
 
 'Larademo'=>App\Larademo\LarademoFacade::class;
 
+---------------------------------------------------------------------------
+    To Access The Custom Facade Class just ! 
+###################################################
+    use Facades\App\Larademo\Larademo; 
+###################################################
+just 
+
+use Facades before \App\Folder_Name\the_class_name;
+now  create a controller 
+class controller_name  extends Controller {
+    public function index(){
+        print_r(Larademo::sayHello());
+    }
+}
+    
+    
+    
+
+---------------------------------
+
+
+
 
 ------------------------Finish----------------------------
+
+--------------------------------------------------------
+
+
