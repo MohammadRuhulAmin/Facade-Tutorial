@@ -68,7 +68,9 @@ inside alices => register
 ---------------------------------------------------------------------------
     To Access The Custom Facade Class just ! 
 ###################################################
-    use Facades\App\Larademo\Larademo; 
+    use Facades\App\Larademo\Larademo; // not always needed
+    
+    to call \Larademo::sayHello(); \ is must to call anywhere..! 
 ###################################################
 just 
 
